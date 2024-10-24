@@ -2,9 +2,9 @@
     <footer class="app-footer">
         <div class="footer-content">
         <div class="footer-links">
-            <router-link to="/about" class="link">О нас</router-link>
-            <router-link to="/contact" class="link">Контакты</router-link>
-            <router-link to="/privacy" class="link">Политика конфиденциальности</router-link>
+            <router-link to="#" class="link">О нас</router-link>
+            <router-link to="#" class="link">Контакты</router-link>
+            <router-link to="#" class="link">Политика конфиденциальности</router-link>
         </div>
         <div class="footer-info">
             <p>&copy; 2024 Shmot. Все права защищены.</p>
