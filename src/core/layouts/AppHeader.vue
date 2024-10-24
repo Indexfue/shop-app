@@ -42,6 +42,7 @@ header {
 }
 
 .header-logo--title {
+    font-family: 'Sensal Regular' !important; 
     color:#000;
 }
 
