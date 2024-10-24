@@ -1,13 +1,3 @@
-<template>
-    <div class="product-card">
-        <img :src="product.image" alt="Product Image" class="product-image" />
-        <div class="product-info">
-            <h3 class="product-title">{{ product.title }}</h3>
-            <p class="product-price">{{ product.price }} ₽</p>
-        </div>
-    </div>
-</template>
-  
 <script>
 export default {
     name: 'ProductCard',
@@ -19,6 +9,16 @@ export default {
     },
 }
 </script>
+
+<template>
+    <div class="product-card">
+        <img :src="product.image" alt="Product Image" class="product-image" />
+        <div class="product-info">
+            <h3 class="product-title">{{ product.title }}</h3>
+            <p class="product-price">{{ product.price }} ₽</p>
+        </div>
+    </div>
+</template>
 
 <style scoped>
     .product-card {
