@@ -1,35 +1,58 @@
-# shop
+# Интернет-магазин на Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+## О проекте
 
-## Recommended IDE Setup
+Данный проект разработан в рамках лабораторной работы. Он представляет собой модульное веб-приложение интернет-магазина, созданное с использованием Vue.js, Vue Router и Vuex.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Проект реализует следующие основные компоненты:
+- **Каталог товаров**: Отображает список товаров и предоставляет возможность просмотреть детальную карточку товара.
+- **Детальная карточка товара**: Отображает более подробную информацию о выбранном товаре.
+- **Корзина**: Управление товарами, добавленными в корзину, с возможностью изменения количества и удаления товаров.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
+## Структура проекта
 
 ```sh
-npm run dev
+├───assets
+│   ├───fonts
+│   ├───images
+│   │   └───products
+│   └───styles
+├───core
+│   └───layouts
+│       └───icons
+├───modules
+│   ├───Cart
+│   │   ├───components
+│   │   └───views
+│   ├───catalog
+│   │   ├───components
+│   │   └───views
+│   └───product
+│       ├───components
+│       └───views
+├───router
+└───store
 ```
 
-### Compile and Minify for Production
+Проект построен по модульному принципу, что позволяет легко расширять и модифицировать его функциональность, добавляя новые модули и компоненты.
 
+## Требования
+
+Для запуска проекта необходимо установить следующие зависимости:
+- **Node.js** (рекомендуется версия 16.x и выше)
+- **Vue.js** (включая Vue CLI)
+
+## Запуск проекта
+
+1. Установите [Node.js](https://nodejs.org/) последней версии.
+2. Команды для запуска проекта:
 ```sh
-npm run build
+$ cd <your-project-name>
+$ npm install
+$ npm run dev
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## Используемые технологии
+ - Vue.js 3.5.12
+ - Vue Router 4.4.5
+ - Vuex 4.0.2
