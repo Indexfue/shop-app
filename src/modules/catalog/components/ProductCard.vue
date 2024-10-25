@@ -32,7 +32,7 @@ export default {
 
     .product-image {
         width: 100%;
-        height: 200px;
+        height: 500px;
         object-fit: cover;
     }
 
