@@ -1,4 +1,6 @@
 <script>
+    import { mapMutations } from 'vuex';
+    
     export default {
         name: 'ProductCardDetail',
         props: {
@@ -7,6 +9,12 @@
                 required: true,
             },
         },
+        methods: {
+            ...mapMutations(['ADD_TO_CART']),
+            addToCart(product) {
+                this.ADD_TO_CART(product)
+            }
+        }
     };
 </script>
 
@@ -26,6 +34,7 @@
                 <p v-if="product.availability" class="product-availability">
                   Наличие: {{ product.availability ? 'В наличии' : 'Нет в наличии' }}
                 </p>
+                <button @click="addToCart(product)">Добавить в корзину</button>
             </div>
         </div>
     </div>
@@ -64,27 +73,31 @@
 
 .product-title {
     font-size: 24px;
+    color: black;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .product-description {
     font-size: 16px;
-    color: #555;
+    color: black;
     margin-bottom: 15px;
 }
 
 .product-details {
     font-size: 16px;
+    color: black;
 }
 
 .product-price {
     font-size: 20px;
+    color: black;
     font-weight: bold;
     margin-top: 10px;
 }
 
 .product-sku, .product-brand, .product-availability {
     margin-top: 5px;
+    color: black;
 }
 </style>

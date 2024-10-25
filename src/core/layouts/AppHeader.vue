@@ -15,7 +15,7 @@ import HeaderLogo from './icons/HeaderLogo.vue'
                         <router-link to="/" class="link">Главная</router-link>
                     </div>
                     <div class="header-link--inner">
-                        <router-link to="/basket" class="link">Корзина</router-link>
+                        <router-link to="/cart/" class="link">Корзина</router-link>
                     </div>
                 </div>
             </div>

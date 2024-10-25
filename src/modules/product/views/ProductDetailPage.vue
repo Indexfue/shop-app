@@ -61,6 +61,7 @@
   
 <style scoped>
     .product-detail-page {
+        color: black;
         width: 90%;
         margin: 0 auto;
     }
